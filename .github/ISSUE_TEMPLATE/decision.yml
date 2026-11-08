@@ -1,0 +1,25 @@
+name: 待裁决事项
+description: 需要研究者拍板的设计或流程问题
+title: "[决策] "
+labels: ["type:decision"]
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: 背景事实
+      description: 只写实测得到的事实，带日期与文件路径
+    validations:
+      required: true
+  - type: textarea
+    id: options
+    attributes:
+      label: 选项与各自影响
+      description: 每个选项写清代价与可逆性；不要替研究者选
+    validations:
+      required: true
+  - type: textarea
+    id: blocking
+    attributes:
+      label: 不决定会阻塞什么
+    validations:
+      required: false
